@@ -1,6 +1,5 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticache from 'aws-cdk-lib/aws-elasticache';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
@@ -16,7 +15,7 @@ export class RedisStack extends cdk.Stack {
 
     // Create VPC And manage security group and Inbound Rules
     const vpc = new ec2.Vpc(this, 'RedisVPC', {
-      cidr: '10.0.0.0/16',
+      ipAddresses: ec2.IpAddresses.cidr('10.0.0.0/16'),
       maxAzs: 2,
       natGateways: 1,
       subnetConfiguration: [
