@@ -7,7 +7,6 @@ AWS.config.update({region: 'eu-west-1'});
 const kinesis = new AWS.Kinesis({apiVersion: '2013-12-02'});
 
 const streamName = 'KinesisIngressStream';
-const partitionKey = 'test'; // Replace with a suitable partition key
 
 // Function to send message to Kinesis
 const sendMessageToKinesis = async (userLocationData) => {
