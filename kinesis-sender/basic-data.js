@@ -71,7 +71,7 @@ const sendMultipleLocationsToKinesis = async (startLocation, numLocations) => {
 async function main() {
   while (true)
   {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 1000; i++) {
       const startLocation = generateStartLocation();
       const numberOfLocations = Math.floor(Math.random() * 100) + 100; // Random number between 100 and 200
       sendMultipleLocationsToKinesis(startLocation, numberOfLocations);

@@ -101,7 +101,7 @@ export class RedisStack extends cdk.Stack {
     });
 
     // Create lambda with access to redis cluster
-    const lambdaFunction = new lambda.Function(this, 'LambdaFunction', {
+    const lambdaFunction = new lambda.Function(this, 'LocationProcessor', {
       runtime: lambda.Runtime.NODEJS_20_X,
       code: lambda.Code.fromAsset('lambda'),
       handler: 'index.handler',
