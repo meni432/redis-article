@@ -24,6 +24,7 @@ In this streamlined example, data flows from Amazon Kinesis Stream to AWS Lambda
 ## Sample Code
 - [CDK Stack](https://github.com/meni432/redis-article/blob/main/redis/lib/redis-stack.ts)
 - [Lambda code example](https://github.com/meni432/redis-article/blob/main/redis/lambda/index.js)
+- [Example Data Sender For Testing the flow](https://github.com/meni432/redis-article/blob/main/kinesis-sender/basic-data.js)
 
 ## Conclusion
 
