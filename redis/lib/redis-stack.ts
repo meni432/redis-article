@@ -56,7 +56,6 @@ export class RedisStack extends cdk.Stack {
       subnetIds: privateSubnetIds,
     });
 
-    // computeSecurityGroup.addIngressRule(ec2.Peer.anyIpv4(), ec2.Port.tcp(80), 'Allow HTTP Port 80');
     redisSecurityGroup.addIngressRule(computeSecurityGroup, ec2.Port.tcp(6379), 'Allow Redis Port 6379');
 
     // Create the redis cluster
