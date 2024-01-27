@@ -23,8 +23,8 @@ Redis, an in-memory data store, and AWS Lambda, a serverless computing service, 
 In this streamlined example, data flows from Amazon Kinesis Stream to AWS Lambda and then to Kinesis Firehose. Kinesis Stream captures real-time data, which triggers Lambda functions for on-the-fly processing. Finally, processed data is transferred to Kinesis Firehose for reliable loading into storage or analytics destinations. This setup demonstrates a modern, serverless, and efficient approach to real-time data processing in the cloud.
 
 ## Sample Code
-[CDK Stack](https://github.com/meni432/redis-article/blob/main/redis/lib/redis-stack.ts)
-[Lambda code example](https://github.com/meni432/redis-article/blob/main/redis/lambda/index.js)
+- [CDK Stack](https://github.com/meni432/redis-article/blob/main/redis/lib/redis-stack.ts)
+- [Lambda code example](https://github.com/meni432/redis-article/blob/main/redis/lambda/index.js)
 
 ## Conclusion
 
